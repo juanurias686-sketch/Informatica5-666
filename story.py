@@ -15,9 +15,9 @@ def main():
     # print(planet)
 
     name = input("What is your name? ").strip().title()
-    color = input("Tell me a color: ").strip().
+    color = input("Tell me a color: ").strip()
     adjetive = input("say an adjetive: ").strip()
-    goal = input("A goal you would like to achieve: ").strip().
+    goal = input("A goal you would like to achieve: ").strip()
 
     print(f"Hello, {name}!", end="\n\n")
 
