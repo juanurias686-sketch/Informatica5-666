@@ -1,8 +1,6 @@
 def main():
-    layer = input("Descent atmosphere layer: ")
-
+        layer = input("Descent atmosphere layer: ")
         if layer == "Exosphere":
-
             print("Your altittude will be between 700–10,000 km")
 
 
@@ -20,8 +18,27 @@ def main():
             print("Invalid option")
 
 
-    altitude = int(input("Enter exact alttitude: "))
-    
+        altitude = float(input("Enter exact alttitude: "))
+        if altitude >= 700:
+                (print(altitude * 1000 /  2000 , "Total descent time"))
+
+        elif altitude >= 85:
+                     print(altitude * 1000 /  500 , "Total descent time")
+        elif altitude >= 50:
+                    print(altitude * 1000 /  200 , "Total descent time")
+        elif altitude >= 12:
+                    print(altitude * 1000 /  75 , "Total descent time")
+        elif altitude > 0:
+                    print(altitude * 1000 /  20 , "Total descent time")
+
+
+
+
+
+
+
+
+
 
 
 
