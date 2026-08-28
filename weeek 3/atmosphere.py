@@ -20,14 +20,14 @@ def main():
 
         altitude = float(input("Enter exact alttitude: "))
         if altitude >= 700:
-                (print(altitude * 1000 /  2000 , "Total descent time"))
+                (print(altitude - 700 /  2, "Total descent time"))
 
         elif altitude >= 85:
-                     print(altitude * 1000 /  500 , "Total descent time")
+                     print(altitude - 85 /  0.5 , "Total descent time")
         elif altitude >= 50:
-                    print(altitude * 1000 /  200 , "Total descent time")
+                    print(altitude - 50 /  0.2 , "Total descent time")
         elif altitude >= 12:
-                    print(altitude * 1000 /  75 , "Total descent time")
+                    print(altitude - 12 /  0.075, "Total descent time")
         elif altitude > 0:
                     print(altitude * 1000 /  20 , "Total descent time")
 

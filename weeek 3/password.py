@@ -5,6 +5,8 @@ def main():
         attempt = int(input("Enter password: "))
         if attempt == password:
                 print("Correct password")
+        elif != password
+               print("You retard")
 
 
 

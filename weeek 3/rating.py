@@ -3,9 +3,8 @@ def main():
 
     rating = float(input("Rate Carniceria Chapala: "))
 
-    if rating = 5:
-        print("Perfection")
-    elif rating >= 4.5:
+
+    if rating >= 4.5:
         print("Perfection")
     elif rating >= 4:
         print("Excelent")
