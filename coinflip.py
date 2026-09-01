@@ -1,7 +1,22 @@
 import random
 def main():
-    coin = random.randint("Heads", "Tails")
-    print(coin)
+    coin = ["Heads" , "Tails"]
+    attempts = 3
+    while attempts > 0:
+        flip = random.choice(coin)
+        guess = input("Heads or tails?: ").strip().lower()
+
+        print("The coin landed on", flip)
+
+
+        if guess == flip:
+            print("Winner")
+            break
+        else:
+            print("You retard")
+            attempts -= 1
+            print("Attempts left:", attempts)
+
 
 
 
