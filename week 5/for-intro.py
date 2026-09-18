@@ -1,11 +1,9 @@
 def main():
 
     doctrine = ["Faith in Jesus Christ", "Repentance", "Baptize", "Receive the holy ghost", "Endure to be saved"]
-    for _ in doctrine:
-        index = 0
-        while index < len(doctrine):
-            print(doctrine[index])
-            index += 1
+    for i in range(len(doctrine)):
+        print(f"{i +1}{doctrine[i]})
+
 
 
 
