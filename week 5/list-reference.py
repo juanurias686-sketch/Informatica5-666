@@ -24,7 +24,7 @@ def main():
     change = input(" ")
 
     if change == "y":
-    password[1]= 4
+    password[1] = 4
     password[0] = 2
     password[7] = 1
     password[6] = 9

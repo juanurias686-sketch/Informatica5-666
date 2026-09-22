@@ -2,7 +2,7 @@ def main():
 
     doctrine = ["Faith in Jesus Christ", "Repentance", "Baptize", "Receive the holy ghost", "Endure to be saved"]
     for i in range(len(doctrine)):
-        print(f"{i +1}{doctrine[i]})
+        print(f"{i + 1}{doctrine[i]})
 
 
 
