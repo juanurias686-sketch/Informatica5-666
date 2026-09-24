@@ -1,0 +1,9 @@
+Write a description for a while loop.
+A while loop is a loop that whill repeat when a condition is true and will break with another condition
+
+
+Write a description for a for loop.
+A loop that will be repeating an specific number of times
+
+Compare a while loop to a for loop
+The while loop can be repeated infinite times if you dont set a condition to stop, and a for loop has set a limit 
