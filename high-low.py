@@ -4,9 +4,9 @@ def main():
 
 
         if a > b:
-            print(f"The highest number entered is {a}")
+            print(f"The highest number entered is A {a}")
         else:
-            print(f"The highest number entered is {b}")
+            print(f"The highest number entered is B {b}")
 
 
     num1 = float(input("Enter A value: "))
@@ -22,9 +22,11 @@ def main():
 
 
             if a < b < c:
-                print(f"The lowest number entered is {a}")
+                print(f"The lowest number entered is A {a}")
             elif b < a < c:
-                print(f"The lowest number entered is {b}")
+                print(f"The lowest number entered is B {b}")
+            else:
+                 print(f"The lowest number entered is C {c}")
 
 
     num1 = float(input("Enter A value: "))
