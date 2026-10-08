@@ -1,12 +1,27 @@
 def main():
     print("Binary to Decimal Converter")
     print("The purpose of this program is to make you known the value of a binary code in understandable numbers" )
+    bin = int(input("Type a binary code: "))
+    bin_to_dec(bin)
+    if bit =
 
 
 
 
 def bin_to_dec(num):
-    num = [1,2,4,8,16,32,64,128]
+    dec = 0
+    size = len(num)
+
+    for i in range(size):
+
+        bit = int(num[size - 1 - i])
+        dec += bit * (2 ** i)
+
+    print(f" The binary code {num} in decimal: {dec}")
+
+
+
+
 
 
 
