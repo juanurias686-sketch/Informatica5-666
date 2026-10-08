@@ -1,0 +1,29 @@
+def welcome():
+    print("Bienvenido al conversor de Binario a Decimal!")
+    print("Este programa convierte cadenas de ceros y unos en su valor numérico.")
+
+
+def convertir_binario(binario_str):
+    decimal = 0
+    longitud = len(binario_str)
+    
+    for i in range(longitud):
+        # Tomamos el dígito de derecha a izquierda y calculamos su valor posicional (potencias de 2)
+        bit = int(binario_str[longitud - 1 - i])
+        decimal += bit * (2 ** i)
+        
+    print(f"El número binario {binario_str} en decimal es: {decimal}")
+
+
+def main():
+    welcome()
+    entrada = input("\nIngresa tu código binario (solo ceros y unos, ej. 1011): ")
+    
+    # Validación sencilla para asegurarnos de que solo sean 0s y 1s
+    if all(bit in '01' for bit in entrada) and len(entrada) > 0:
+        convertir_binario(entrada)
+    else:
+        print("Error: Ingresa una cadena binaria válida compuesta únicamente por 0 y 1.")
+
+
+main()
