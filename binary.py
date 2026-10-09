@@ -1,9 +1,9 @@
 def main():
     print("Binary to Decimal Converter")
     print("The purpose of this program is to make you known the value of a binary code in understandable numbers" )
-    bin = int(input("Type a binary code: "))
+    bin = input("Type a binary code: ")
     bin_to_dec(bin)
-    if bit =
+
 
 
 
