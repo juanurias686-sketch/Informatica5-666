@@ -19,7 +19,18 @@ def words (file):
     with open(file) as hangwords:
         content = hangwords.read().splitlines()
     word1 = random.choice(content)
-    print(word1)
+    print("This is your word: ")
+    count = len(word1)
+    content = ["_"] * count
+    print(" ".join(content))
+
+    while True:
+        guess = input("Take a guess: ")
+
+        if len(guess) == 1:
+            break
+        else:
+            print("You retard")
 
 
 
