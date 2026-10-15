@@ -16,21 +16,46 @@ def main():
     words("hangwords.txt")
 
 def words (file):
+    attempts = 10
     with open(file) as hangwords:
         content = hangwords.read().splitlines()
     word1 = random.choice(content)
-    print("This is your word: ")
-    count = len(word1)
-    content = ["_"] * count
-    print(" ".join(content))
+    hint = ["_"] * len(word1)
+    incorrect_letters = []
 
-    while True:
-        guess = input("Take a guess: ")
+    while attempts > 0:
+        print("Current word:", " ".join(hint) )
 
-        if len(guess) == 1:
-            break
-        else:
-            print("You retard")
+
+        while True:
+            guess = input("Take a guess: ")
+
+            if len(guess) == 1:
+                break
+            else:
+                print("You retard")
+        if guess in word1 and guess not in hint:
+            for i in range(len(word1)):
+                if word1[i] == guess:
+                    hint[i] = guess
+            print("Great guess")
+        elif guess in hint:
+            attempts -= 1
+            print("Wrong guess! Attempts left:", str(attempts))
+        if guess not in incorrect_letters:
+            print(f"Incorrect letters: {" ".join(incorrect_letters)}")
+
+        if "_" not in hint:
+            print("Congratulations! 🥳 You guessed the word:", word1)
+        if attempts == 0 and "_" in hint:
+            print("No attempts left 💀 The word was:", word1)
+
+
+
+
+
+
+
 
 
 
